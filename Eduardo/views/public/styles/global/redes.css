@@ -1,0 +1,33 @@
+@import url("./cores.css");
+
+.redes {
+  display: block;
+  max-width: 100%;
+  padding: clamp(20px, 6vw + 1rem, 80px);
+  background-color: var(--azul-4);
+  text-align: center;
+}
+
+.redes h1 {
+  text-transform: lowercase;
+  font-variant: normal;
+  margin-bottom: clamp(40px, 3.5vw + 1rem, 60px);
+  color: white;
+}
+
+.redes nav {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(40px, 6vw + 1rem, 120px);
+  place-items: center;
+  place-content: center;
+}
+
+.redes nav a {
+  padding-inline: 12px;
+}
+
+.redes img {
+  height: clamp(20px, 3.5vw + 1rem, 48px);
+}

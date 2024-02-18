@@ -1,0 +1,12 @@
+/* Global */
+@import url("./global/cores.css");
+@import url("./global/tipografia.css");
+@import url("./global/global.css");
+
+/* Header */
+@import url("./componentes/header.css");
+
+/* Index */
+@import url("./index/main.css");
+@import url("./index/sobre.css");
+@import url("./global/redes.css");
