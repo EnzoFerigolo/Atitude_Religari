@@ -10,7 +10,7 @@
   font-family: "Playfair Display";
   font-variant: small-caps;
   font-weight: 800;
-  font-size: clamp(0.75rem, 2vw + 1rem, 2.25rem);
+  font-size: clamp(1.35rem, 2.75vw + 1rem, 2.25rem);
   letter-spacing: 0.1em;
   line-height: 1.5;
 }
@@ -19,7 +19,7 @@
   font-family: "Playfair Display";
   font-variant: small-caps;
   font-weight: 400;
-  font-size: clamp(0.75rem, 2vw + 1rem, 2.25rem);
+  font-size: clamp(0.75rem, 1.75vw + 1rem, 2.25rem);
   letter-spacing: 0.08em;
 }
 
@@ -58,6 +58,6 @@
   font-variant: small-caps;
   font-weight: 400;
   font-size: clamp(0.35rem, 0.2vw + 1rem, 0.85rem);
-  letter-spacing: 0em;
+  letter-spacing: 0.25em;
   line-height: 1.5;
 }

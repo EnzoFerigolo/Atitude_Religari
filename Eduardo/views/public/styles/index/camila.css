@@ -1,0 +1,43 @@
+@import url("../global/cores.css");
+
+.camila-bg {
+  margin-top: 40px;
+  background: linear-gradient(var(--cinza-1) 60%, white 60%);
+}
+
+.camila {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--bege-1);
+}
+
+.camila img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 80%;
+  height: 100%;
+}
+
+.camila-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-items: left;
+  align-self: center;
+  gap: clamp(12px, 2.5vw + 0.5rem, 32px);
+  padding: 15%;
+}
+
+.camila-txt h1 {
+  font-variant: normal;
+}
+
+.camila button {
+  background-color: var(--bege-2);
+  outline: 1px solid var(--bege-4);
+}
+
+.camila button > a {
+  color: var(--bege-4);
+}
