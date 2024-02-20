@@ -6,6 +6,18 @@
   padding: clamp(20px, 6vw + 1rem, 80px);
   background-color: var(--azul-4);
   text-align: center;
+  position: relative;
+}
+
+.redes::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cinza-4);
 }
 
 .redes h1 {
@@ -31,4 +43,3 @@
 .redes img {
   height: clamp(20px, 3.5vw + 1rem, 48px);
 }
-

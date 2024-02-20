@@ -8,6 +8,7 @@
   padding: clamp(80px, 3vw + 1rem, 120px);
   gap: 20px;
   position: relative;
+  background-color: white;
 }
 
 .depoimento h1 {

@@ -6,9 +6,16 @@
 /* Header */
 @import url("./componentes/header.css");
 
+/* Footer */
+@import url("./componentes/footer.css");
+
 /* Index */
 @import url("./index/main.css");
 @import url("./index/sobre.css");
 @import url("./global/redes.css");
 @import url("./index/depoimento.css");
 @import url("./index/camila.css");
+@import url("./index/blog.css");
+
+/* Agendamento */
+@import url("./componentes/formulario.css");

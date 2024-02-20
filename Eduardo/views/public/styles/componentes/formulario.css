@@ -1,0 +1,28 @@
+@import url("../global/cores.css");
+
+.formulario {
+  background-color: var(--cinza-1);
+  max-width: 1400px;
+  margin: auto;
+}
+
+.formulario h1 {
+  font-variant: normal;
+  grid-column: 1/-1;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: white;
+  padding: 80px;
+  font-variant: small-caps;
+}
+
+form div > * {
+  width: 100%;
+  display: block;
+}
+
+form label

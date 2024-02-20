@@ -4,6 +4,7 @@
   --azul-2: #5f7b90;
   --azul-1: #c6dff2;
 
+  --cinza-4: #626262;
   --cinza-3: #8e8e8e;
   --cinza-2: #dcdcdc;
   --cinza-1: #f0f0f0;
@@ -28,6 +29,10 @@
 
 .azul-1 {
   color: var(--azul-1);
+}
+
+.cinza-4 {
+  color: var(--cinza-4);
 }
 
 .cinza-3 {

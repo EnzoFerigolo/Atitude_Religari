@@ -4,10 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agendamento | Eduardo Religari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:wght@400;700;900&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
-  <body>
-    <%- include('../public/header.html'); %> <%-
-    include('../public/footer.html'); %>
+  <body id="agendamento">
+    <%- include('../public/header.html'); %>
+    <div class="formulario">
+      <h1 class="font-1-l azul-4">faça seu agendamento</h1>
+      <form action="/submit" class="font-1-s azul-4">
+        <div>
+          <label for="nome">Nome</label> <input type="text" name="nome" />
+        </div>
+        <div>
+          <label for="celular" aria-placeholder="(xx) xxxxx-xxxx"
+            >Celular para contato</label
+          >
+          <input type="text" name="celular" />
+        </div>
+        <div>
+          <label for="email" aria-placeholder="exemplo@exemplo.com"
+            >Email</label
+          >
+          <input type="email" name="email" />
+        </div>
+        <div>
+          <label for="serviços">Selecione o serviço que deseja</label>
+          <select name="serviços" id="serviços">
+            <option value="" disabled selected>Selecione</option>
+            <option value="terapia-individual">Psicoterapia individual</option>
+            <option value="terapia-casal">Psicoterapia para casais</option>
+            <option value="terapia-infantil">Psicoterapia infantil</option>
+            <option value="terapia-familiar">Psicoterapia para família</option>
+            <option value="aconselhamento-familiar">
+              Aconselhamento familiar
+            </option>
+            <option value="life-design">Life Design</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <%- include('../public/footer.html'); %>
   </body>
 </html>

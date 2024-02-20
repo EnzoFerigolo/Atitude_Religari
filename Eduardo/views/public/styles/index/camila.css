@@ -1,8 +1,8 @@
 @import url("../global/cores.css");
 
 .camila-bg {
-  margin-top: 40px;
-  background: linear-gradient(var(--cinza-1) 60%, white 60%);
+  padding-top: 40px;
+  background: linear-gradient(white 60%, var(--cinza-1) 60%);
 }
 
 .camila {
@@ -16,7 +16,8 @@
   max-width: 100%;
   object-fit: cover;
   object-position: 80%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .camila-txt {
@@ -26,7 +27,7 @@
   justify-items: left;
   align-self: center;
   gap: clamp(12px, 2.5vw + 0.5rem, 32px);
-  padding: 15%;
+  padding: 12%;
 }
 
 .camila-txt h1 {

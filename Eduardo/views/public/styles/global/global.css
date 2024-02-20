@@ -17,11 +17,16 @@ h1,
 h2,
 p,
 span,
-h3 button {
+h3,
+button,
+label,
+input,
+form {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  border: none;
 }
 
 .container {
@@ -29,6 +34,7 @@ h3 button {
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
   margin: 0 auto;
+  place-content: center;
 }
 
 @media (max-width: 760px) {

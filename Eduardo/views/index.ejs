@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eduardo Religari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:wght@400;700;900&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body id="index">
     <%- include('public/header.html') %>
     <main>
       <div class="main">
-        <h1 class="font-1-xl azul-4">
+        <h1 class="font-1-xl-sc azul-4">
           Neuropsicólogo<br />
           e Psicopedagogo
         </h1>
@@ -22,23 +27,25 @@
         </ul>
         <div class="main-links">
           <button><a href="/contato">Contato</a></button>
-          <a
-            class="font-2 cinza-3"
-            href="https://www.google.com/maps/place/R.+Izidoro+Maes,+300+-+Centro,+Ilhota+-+SC,+88320-000,+Brasil/@-26.901766,-48.826063,16z/data=!4m6!3m5!1s0x94df31db90470141:0xb8152bb33bf0b1b2!8m2!3d-26.9020343!4d-48.8253548!16s%2Fg%2F11s49n4b1x?hl=pt-BR&entry=ttu"
-            >Ver localização
-            <span><img src="/icons/link_externo_svg.svg" alt="" /></span>
-          </a>
+          <div>
+            <a
+              class="font-2 cinza-3"
+              href="https://www.google.com/maps/place/R.+Izidoro+Maes,+300+-+Centro,+Ilhota+-+SC,+88320-000,+Brasil/@-26.901766,-48.826063,16z/data=!4m6!3m5!1s0x94df31db90470141:0xb8152bb33bf0b1b2!8m2!3d-26.9020343!4d-48.8253548!16s%2Fg%2F11s49n4b1x?hl=pt-BR&entry=ttu"
+              >Ver localização
+            </a>
+            <img src="/icons/link_externo_svg.svg" alt="" />
+          </div>
         </div>
       </div>
     </main>
     <section class="servicos-main azul-4">
       <div>
-        <h1 class="font-1-regular">
+        <h1 class="font-1-regular-sc">
           Terapia especializada para crianças e neurodivergentes
         </h1>
-        <h1 class="font-1-regular">Sessões de até 2 horas</h1>
-        <h1 class="font-1-regular">Acompanhamento familiar completo</h1>
-        <h1 class="font-1-regular">Aconselhamento de carreira</h1>
+        <h1 class="font-1-regular-sc">Sessões de até 2 horas</h1>
+        <h1 class="font-1-regular-sc">Acompanhamento familiar completo</h1>
+        <h1 class="font-1-regular-sc">Aconselhamento de carreira</h1>
         <button><a href="/agendamento">agendar uma sessão</a></button>
       </div>
     </section>
@@ -98,6 +105,23 @@
           </p>
           <button><a href="">marque uma consulta</a></button>
         </div>
+      </div>
+    </article>
+    <article class="blog-bg">
+      <div class="blog container">
+        <h1 class="font-1-l azul-4">últimas postagens</h1>
+        <div>
+          <a href="https://gumpee.com.br/blog" class="font-2 cinza-3"
+            >blog pessoal </a
+          ><img src="icons/link_externo_svg.svg" alt="" />
+        </div>
+
+        <% for( let index = 0; index < 4; index++ ) { %>
+        <a href="<%= noticias[index].link %>" class="post">
+          <img src="<%= noticias[index].imagem %>" alt="" />
+          <h2 class="font-1-s cinza-4"><%= noticias[index].titulo %></h2>
+        </a>
+        <% } %>
       </div>
     </article>
     <%- include('public/footer.html'); %>

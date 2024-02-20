@@ -1,4 +1,5 @@
 import express from "express";
+import noticias from "./noticias.json" assert { type: "json" };
 
 const app = express();
 const port = 3000;
@@ -10,7 +11,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs", { noticias: noticias.noticia });
 });
 
 app.get("/index.ejs", (req, res) => {
