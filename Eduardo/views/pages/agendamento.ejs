@@ -14,27 +14,24 @@
   <body id="agendamento">
     <%- include('../public/header.html'); %>
     <div class="formulario">
-      <h1 class="font-1-l azul-4">faça seu agendamento</h1>
-      <form action="/submit" class="font-1-s azul-4">
+      <h1 class="font-1-l azul-4 formulario-titulo">faça seu agendamento</h1>
+      <form action="/submit" class="font-1-s-sc azul-4" method="post">
         <div>
-          <label for="nome">Nome</label> <input type="text" name="nome" />
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" placeholder="Seu nome completo aqui" />
         </div>
         <div>
-          <label for="celular" aria-placeholder="(xx) xxxxx-xxxx"
-            >Celular para contato</label
-          >
-          <input type="text" name="celular" />
+          <label for="celular">Celular para contato</label>
+          <input type="tel" name="celular" placeholder="(xx) xxxxx-xxxx" />
         </div>
         <div>
-          <label for="email" aria-placeholder="exemplo@exemplo.com"
-            >Email</label
-          >
-          <input type="email" name="email" />
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="exemplo@exemplo.com" />
         </div>
         <div>
           <label for="serviços">Selecione o serviço que deseja</label>
           <select name="serviços" id="serviços">
-            <option value="" disabled selected>Selecione</option>
+            <option value="selecione" disabled selected>Selecione</option>
             <option value="terapia-individual">Psicoterapia individual</option>
             <option value="terapia-casal">Psicoterapia para casais</option>
             <option value="terapia-infantil">Psicoterapia infantil</option>
@@ -45,6 +42,24 @@
             <option value="life-design">Life Design</option>
           </select>
         </div>
+        <div>
+          <label for="qt-pessoas">Para quantas pessoas?</label>
+          <input type="number" name="qt-pessoas" placeholder="1" value="1" />
+        </div>
+        <div>
+          <label for="data">Escolha a data</label>
+          <input type="date" name="data" />
+        </div>
+        <div>
+          <label for="genero">Gênero que se identifica</label>
+          <input type="text" name="genero" />
+        </div>
+        <button type="submit" value="Enviar">Solicitar agendamento</button>
+        <% if (locals.nome) { %>
+        <h1 class="font-2 azul-4">
+          Obrigado, <%- locals.nome %>. Em breve entrarei em contato!
+        </h1>
+        <% } %>
       </form>
     </div>
     <%- include('../public/footer.html'); %>

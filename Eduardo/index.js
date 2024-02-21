@@ -1,10 +1,14 @@
 import express from "express";
 import noticias from "./noticias.json" assert { type: "json" };
+import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
 
-app.use(express.static("./views/public"));
+app.use([
+  express.static("./views/public"),
+  bodyParser.urlencoded({ extended: true }),
+]);
 
 app.listen(port, () => {
   console.log(`Servidor ouvindo na porta ${port}.`);
@@ -32,4 +36,9 @@ app.get("/servicos", (req, res) => {
 
 app.get("/contato", (req, res) => {
   res.render("pages/contato.ejs");
+});
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.render("pages/agendamento.ejs", { nome: req.body["nome"].split(" ")[0] });
 });

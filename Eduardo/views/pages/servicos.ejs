@@ -11,8 +11,133 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
-  <body>
-    <%- include('../public/header.html'); %> <%-
-    include('../public/footer.html'); %>
+  <body id="servicos">
+    <%- include('../public/header.html'); %>
+    <main class="main-bg">
+      <div>
+        <h1 class="font-1-xl-sc">Meus serviços</h1>
+        <div>
+          <p class="font-2" style="font-weight: 300">
+            Mais do que terapias, aqui você irá encontrar amigos que querem ver
+            sua melhora.
+          </p>
+          <div class="link-externo">
+            <a href="/agendamento" class="font-2 cinza-3"
+              >Solicitar agendamento</a
+            >
+            <img src="icons/link_externo_svg.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <ul class="font-2 cinza-1">
+            <li>Psicoterapia Individual</li>
+            <li>Psicoterapia infantil</li>
+            <li>Terapia para casal</li>
+            <li>Terapia para família</li>
+            <li>Aconselhamento de carreira</li>
+            <li>Life Design</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <section class="servicos">
+      <div class="container">
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Psicoterapia individual</h1>
+          <p class="font-2 cinza-3">
+            Trata-se de um momento de escuta ativa por parte do profissional,
+            que visa guia-lo no enfrentamento de todos os desconfortos e queixas
+            trazidas para o consultório. Sempre pautando este momento em uma
+            vertente cientifica, no nosso caso Logoterapia e Sistêmica Familiar.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+        <div class="servicos-img">
+          <img src="imgs/servicos/psicoterapia-individual.jpg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="servicos-img">
+          <img src="imgs/servicos/psicoterapia-casais.jpg" alt="" />
+        </div>
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Psicoterapia para casais</h1>
+          <p class="font-2 cinza-3">
+            Através de mediação, busca-se entender a maneira de relacionar-se do
+            casal, nesta busca elucida-se a pratica de comunicação assertiva, o
+            entendimento do outro, alinhamento de expectativas e planos,
+            correspondência afetiva e sexual, entre outros.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Psicoterapia infantil</h1>
+          <p class="font-2 cinza-3">
+            Tratamento que visa minimizar sofrimentos que envolvem o
+            desenvolvimento infantil. Por vezes avaliar tal desenvolvimento e
+            conscientizar os cuidadores sobre aspectos referentes ao cuidar.
+            Atua-se nos modos de sociabilização e relação eu/mundo da criança,
+            bem como em fatores emocionais que envolvem estes processos.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+        <div class="servicos-img">
+          <img src="imgs/servicos/psicoterapia-infantil.jpg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="servicos-img">
+          <img src="imgs/servicos/aconselhamento-familiar.jpg" alt="" />
+        </div>
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Aconselhamento familiar</h1>
+          <p class="font-2 cinza-3">
+            Resolução de uma demanda especifica da família, um problema ou
+            situação recorrente ou que esteja gerando desconforto e
+            desiquilíbrio para do o sistema familiar. Nesta pratica o
+            Psicólogo(a) não se faz ativo, e sim estuda o organismo familiar e
+            orienta praticas para reestabelecer a harmonia do lar.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Life design</h1>
+          <p class="font-2 cinza-3">
+            Apesar da terminologia ser “Vida”, esta pratica é voltada para o
+            desenvolvimento da carreira ou aquilo que se almeja dela. Não
+            somente inserir-se no mercado de trabalho, mas traçar um rumo único
+            e seu que o guie e esteja alinhado a sua filosofia pessoal.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+        <div class="servicos-img">
+          <img src="imgs/servicos/life-design.jpg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="servicos-img">
+          <img src="imgs/servicos/psicoterapia-familia.jpg" alt="" />
+        </div>
+        <div class="servicos-txt">
+          <h1 class="font-1-l azul-4">Psicoterapia para família</h1>
+          <p class="font-2 cinza-3">
+            Grupo familiar são todas as pessoas que compõem a família nuclear ou
+            que moram na mesma casa. O objetivo principal é reestruturar a
+            dinâmica familiar a fim de permitir relações mais saudáveis,
+            melhorando a capacidade de escuta e comunicação, compreensão,
+            expressão de afetos e sentimentos.
+          </p>
+          <button><a href="/agendamento">solicitar agendamento</a></button>
+        </div>
+      </div>
+    </section>
+    <h1 class="font-1-xl-sc azul-4 servicos-msg">
+      Amor, serenidade, inspiração
+    </h1>
+    <%- include('../public/footer.html'); %>
   </body>
 </html>

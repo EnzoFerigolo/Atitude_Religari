@@ -17,5 +17,12 @@
 @import url("./index/camila.css");
 @import url("./index/blog.css");
 
+/* Serviços */
+@import url("./servicos/main.css");
+@import url("./servicos/servicos.css");
+
+/* Sobre */
+@import url("./sobre/main.css");
+
 /* Agendamento */
 @import url("./componentes/formulario.css");

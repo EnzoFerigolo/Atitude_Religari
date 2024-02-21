@@ -1,0 +1,61 @@
+@import url("../global/cores.css");
+
+.servicos div.container {
+  max-width: 1400px;
+  height: auto;
+  place-items: center;
+  place-content: center;
+}
+
+.servicos-txt {
+  padding: 15%;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.servicos-txt p {
+  margin-block: 40px;
+}
+
+.servicos-img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicos-img img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.servicos {
+  position: relative;
+}
+
+.servicos::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: var(--cinza-4);
+  bottom: -14px;
+  right: 15%;
+}
+
+.servicos-msg {
+  width: 100%;
+  text-align: center;
+  margin-block: 80px;
+}
+
+@media (max-width: 760px) {
+  .servicos-img {
+    grid-row: 2;
+    max-height: 400px;
+  }
+  .servicos-img img {
+    width: 100%;
+  }
+}

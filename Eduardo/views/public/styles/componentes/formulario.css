@@ -1,14 +1,22 @@
 @import url("../global/cores.css");
 
+body#agendamento {
+  background: linear-gradient(var(--cinza-1) 40%, var(--azul-4) 40%);
+}
+
 .formulario {
-  background-color: var(--cinza-1);
   max-width: 1400px;
   margin: auto;
 }
 
+.formulario-titulo {
+  grid-column: 1/-1;
+  margin-top: 60px;
+  margin-left: 6%;
+}
+
 .formulario h1 {
   font-variant: normal;
-  grid-column: 1/-1;
 }
 
 form {
@@ -16,8 +24,22 @@ form {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   background-color: white;
-  padding: 80px;
+  padding: 5% 6%;
   font-variant: small-caps;
+  box-sizing: content-box;
+  margin-block: 40px;
+  position: relative;
+}
+
+form::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-color: var(--cinza-4);
+  right: 10%;
+  bottom: -14px;
 }
 
 form div > * {
@@ -25,4 +47,29 @@ form div > * {
   display: block;
 }
 
-form label
+form input,
+form select {
+  display: block;
+  max-width: 100%;
+  border: 2px solid var(--cinza-1);
+  background-color: white;
+  height: 2.5rem;
+  padding: 0 20px;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  place-self: end;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  form button {
+    margin-block: 20px;
+    place-self: start;
+  }
+}
