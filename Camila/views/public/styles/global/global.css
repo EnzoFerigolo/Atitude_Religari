@@ -1,0 +1,87 @@
+@import url("./cores.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cinza-1);
+}
+
+html,
+body,
+a,
+ul,
+li,
+h1,
+h2,
+p,
+span,
+h3,
+button,
+label,
+input,
+form,
+::placeholder,
+option {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin: 0 auto;
+  place-content: center;
+}
+
+@media (max-width: 760px) {
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+button {
+  font-family: "Playfair Display";
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: clamp(0.7rem, 1vw + 1rem, 1.25rem);
+  letter-spacing: 0.1em;
+  line-height: 1;
+
+  max-width: fit-content;
+  height: fit-content;
+  padding: 1rem 1.75rem;
+  background-color: var(--bege-3);
+  border: 0;
+  outline: 1px solid white;
+  outline-offset: -6px;
+  color: white;
+}
+
+button a {
+  color: white !important;
+}
+
+.link-externo {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 12px !important;
+  max-width: fit-content;
+}
+
+.link-externo a {
+  min-width: fit-content;
+  line-height: 1;
+}
+
+.link-externo img {
+  max-width: 28px;
+  display: block;
+  object-fit: contain;
+}

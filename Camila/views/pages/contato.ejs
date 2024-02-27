@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Camila Lanfredi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body id="contato">
+    <%- include('../public/header.html') %>
+    <main>
+      <h1 class="font-1-l bege-4">entre em contato comigo</h1>
+      <div class="container">
+        <div>
+          <ul class="contato-lista">
+            <li class="font-1-m-sc">
+              <div class="contato-item">
+                <img
+                  src="https://imagensedu.blob.core.windows.net/icons/telefone.png"
+                  alt="" />
+                <p class="font-1-m-sc">Telefone</p>
+              </div>
+              <a href="tel:+55 (47) 3343-0199" class="font-2 light cinza-1"
+                >(47) 3343-0199</a
+              >
+            </li>
+            <li class="font-1-m-sc">
+              <div class="contato-item">
+                <img
+                  src="https://imagensedu.blob.core.windows.net/icons/email.png"
+                  alt="" />
+                <p class="font-1-m-sc">Email</p>
+              </div>
+              <a
+                href="mailto:adm@atitudereligare.com.br"
+                class="font-2 light cinza-1"
+                >adm@atitudereligare.com.br</a
+              >
+            </li>
+            <li class="font-1-m-sc">
+              <div class="contato-item">
+                <img
+                  src="https://imagensedu.blob.core.windows.net/icons/local.png"
+                  alt="" />
+                <p class="font-1-m-sc">Endereço</p>
+              </div>
+              <a
+                href="https://www.google.com/link_externo/place/R.+Izidoro+Maes,+300+-+Centro,+Ilhota+-+SC,+88320-000,+Brasil/@-26.901766,-48.826063,16z/data=!4m6!3m5!1s0x94df31db90470141:0xb8152bb33bf0b1b2!8m2!3d-26.9020343!4d-48.8253548!16s%2Fg%2F11s49n4b1x?hl=pt-BR&entry=ttu"
+                class="font-2 light cinza-1"
+                >Rod. Jorge Lacerda, nº9855 <br />
+                Poço Grande, Gaspar/SC</a
+              >
+            </li>
+            <li class="font-1-m-sc">
+              <div class="contato-item">
+                <img
+                  src="https://imagensedu.blob.core.windows.net/icons/relogio.png"
+                  alt="" />
+                <p class="font-1-m-sc">Horário de atendimento</p>
+              </div>
+              <span class="font-2 light cinza-1"
+                >Seg à Sex <br />
+                8h até 18h</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14232.184148890725!2d-48.825355!3d-26.902034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df31db90470141%3A0xb8152bb33bf0b1b2!2sR.%20Izidoro%20Maes%2C%20300%20-%20Centro%2C%20Ilhota%20-%20SC%2C%2088320-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1708728322695!5m2!1spt-BR!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
+    <section class="redes">
+      <h1 class="font-1-l bege-4">redes sociais</h1>
+      <nav>
+        <a
+          href="https://www.instagram.com/eduardo.religare/"
+          target="_blank"
+          ><img
+            src="https://imagensedu.blob.core.windows.net/icons/instagram-preto.svg"
+            alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/eduardo.religare/"
+          target="_blank"
+          ><img
+            src="https://imagensedu.blob.core.windows.net/icons/linkedin-preto.svg"
+            alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/eduardo.religare/"
+          target="_blank"
+          ><img
+            src="https://imagensedu.blob.core.windows.net/icons/facebook-preto.svg"
+            alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/eduardo.religare/"
+          target="_blank"
+          ><img
+            src="https://imagensedu.blob.core.windows.net/icons/x-preto.svg"
+            alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/eduardo.religare/"
+          target="_blank"
+          ><img
+            src="https://imagensedu.blob.core.windows.net/icons/whatsapp-preto.svg"
+            alt=""
+        /></a>
+      </nav>
+    </section>
+    <section id="agendamento">
+      <div class="formulario">
+        <h1 class="font-1-l bege-4 formulario-titulo">faça seu agendamento</h1>
+        <form action="/submit" class="font-1-s-sc bege-3" method="post">
+          <div>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu nome completo aqui" />
+          </div>
+          <div>
+            <label for="celular">Celular para contato</label>
+            <input type="tel" name="celular" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="exemplo@exemplo.com" />
+          </div>
+          <div>
+            <label for="serviços">Selecione o serviço que deseja</label>
+            <select name="serviços" id="serviços">
+              <option value="selecione" disabled selected>Selecione</option>
+              <option value="terapia-individual">
+                Psicoterapia individual
+              </option>
+              <option value="terapia-casal">Psicoterapia para casais</option>
+              <option value="terapia-infantil">Psicoterapia infantil</option>
+              <option value="terapia-familiar">
+                Psicoterapia para família
+              </option>
+              <option value="aconselhamento-familiar">
+                Aconselhamento familiar
+              </option>
+              <option value="life-design">Life Design</option>
+            </select>
+          </div>
+          <div>
+            <label for="qt-pessoas">Para quantas pessoas?</label>
+            <input type="number" name="qt-pessoas" placeholder="1" value="1" />
+          </div>
+          <div>
+            <label for="data">Escolha a data</label>
+            <input type="date" name="data" />
+          </div>
+          <div>
+            <label for="genero">Gênero que se identifica</label>
+            <input type="text" name="genero" />
+          </div>
+          <button type="submit" value="Enviar">Solicitar agendamento</button>
+          <% if (locals.nome) { %>
+          <h1 class="font-2 bege-3">
+            Obrigado, <%- locals.nome %>. Em breve entrarei em contato!
+          </h1>
+          <% } %>
+        </form>
+      </div>
+    </section>
+
+    <%- include('../public/footer.html'); %>
+  </body>
+</html>

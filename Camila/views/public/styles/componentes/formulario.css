@@ -1,0 +1,86 @@
+@import url("../global/cores.css");
+
+body#agendamento,
+section#agendamento {
+  background: linear-gradient(var(--cinza-1) 40%, var(--bege-3) 40%);
+}
+section#agendamento form {
+  margin-bottom: 0;
+}
+
+.formulario {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.formulario-titulo {
+  grid-column: 1/-1;
+  margin-top: 60px;
+  margin-left: 6%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: white;
+  padding: 5% 6%;
+  box-sizing: content-box;
+  margin-block: 40px;
+  position: relative;
+}
+
+form::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-color: var(--cinza-4);
+  right: 10%;
+  bottom: -14px;
+}
+
+form div > * {
+  width: 100%;
+  display: block;
+}
+
+form input,
+form select {
+  display: block;
+  max-width: 100%;
+  border: 2px solid var(--cinza-1);
+  background-color: white;
+  height: 3.5rem;
+  padding: 0 20px;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  place-self: end;
+}
+
+form input::placeholder,
+form input:optional,
+form select::placeholder,
+form select:optional {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: clamp(0.4rem, 0.25vw + 1rem, 0.85rem);
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+  color: var(--cinza-3);
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  form button {
+    margin-block: 20px;
+    place-self: start;
+  }
+}

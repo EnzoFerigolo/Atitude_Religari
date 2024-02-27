@@ -1,0 +1,54 @@
+@import url("../global/cores.css");
+
+.blog-bg {
+  background-color: var(--cinza-1);
+  padding-block: 80px;
+}
+
+.blog {
+  background-color: var(--cinza-1);
+  max-width: 1100px;
+  gap: clamp(32px, 2vw + 1rem, 80px);
+  padding: 0 80px;
+}
+
+.blog h1 {
+  font-variant: normal;
+  padding: 0 10%;
+}
+
+.blog div {
+  display: flex;
+  gap: 12px;
+  align-self: self-end;
+  justify-content: end;
+}
+
+.post {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.post h2 {
+  margin-inline: auto;
+  padding-inline: 20px;
+  margin-top: 20px;
+  max-width: 40ch;
+}
+
+@media (max-width: 760px) {
+  .blog {
+    padding: 0 40px;
+  }
+  .blog h1 {
+    text-align: center;
+  }
+}

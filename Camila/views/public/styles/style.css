@@ -1,0 +1,33 @@
+/* Global */
+@import url("./global/cores.css");
+@import url("./global/tipografia.css");
+@import url("./global/global.css");
+
+/* Header */
+@import url("./componentes/header.css");
+
+/* Footer */
+@import url("./componentes/footer.css");
+
+/* Index */
+@import url("./index/main.css");
+@import url("./index/sobre.css");
+@import url("./global/redes.css");
+@import url("./index/depoimento.css");
+@import url("./index/camila.css");
+@import url("./index/blog.css");
+
+/* Serviços */
+@import url("./servicos/main.css");
+@import url("./servicos/servicos.css");
+
+/* Sobre */
+@import url("./sobre/main.css");
+@import url("./sobre/section.css");
+@import url("./sobre/casal.css");
+
+/* Contato */
+@import url("./contato/main.css");
+
+/* Agendamento */
+@import url("./componentes/formulario.css");

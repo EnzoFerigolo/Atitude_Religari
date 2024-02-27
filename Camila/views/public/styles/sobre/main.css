@@ -1,0 +1,50 @@
+@import url("../global/cores.css");
+
+#sobre main {
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1200px;
+  gap: 80px;
+  padding: 8%;
+}
+
+#sobre main div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  place-content: center;
+}
+
+.link-externo {
+  max-width: fit-content;
+}
+
+#sobre main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#sobre main li {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#sobre main li::before {
+  content: "";
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: var(--bege-3);
+}
+
+.sobre-redes {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-items: left;
+}
+
+.sobre-redes img {
+  max-width: 28px;
+}
