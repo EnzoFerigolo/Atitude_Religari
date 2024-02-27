@@ -1,0 +1,42 @@
+@import url("../global/cores.css");
+
+.casal {
+  display: block;
+}
+
+.casal-img {
+  position: relative;
+  display: block;
+  height: 70vh;
+}
+
+.casal-img img {
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  opacity: 60%;
+}
+
+.casal-img h1 {
+  color: white;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 7vh;
+}
+
+.casal-txt {
+  margin: 0 auto;
+  padding: clamp(60px, 5vw + 1rem, 120px);
+  max-width: 600px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+}
+
+.casal-txt .link-externo {
+  margin-top: 20px;
+}

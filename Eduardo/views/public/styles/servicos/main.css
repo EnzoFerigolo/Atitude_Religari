@@ -33,17 +33,6 @@
   max-width: 30ch;
 }
 
-.link-externo {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  align-self: flex-end;
-}
-
-.link-externo a {
-  width: fit-content;
-  text-align: center;
-}
 
 #servicos main ul {
   /* display: flex;

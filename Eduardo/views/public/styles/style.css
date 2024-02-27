@@ -23,6 +23,11 @@
 
 /* Sobre */
 @import url("./sobre/main.css");
+@import url("./sobre/section.css");
+@import url("./sobre/casal.css");
+
+/* Contato */
+@import url("./contato/main.css");
 
 /* Agendamento */
 @import url("./componentes/formulario.css");

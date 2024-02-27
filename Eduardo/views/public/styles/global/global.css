@@ -41,7 +41,7 @@ option {
 
 @media (max-width: 760px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -64,14 +64,23 @@ button {
 }
 
 button a {
-  color: white;
+  color: white !important;
 }
 
-::placeholder,
-::-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-weight: 200;
-  font-size: clamp(0.35rem, 0.2vw + 1rem, 0.85rem);
-  line-height: 1.5;
-  color: var(--cinza3);
+.link-externo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.link-externo a {
+  min-width: fit-content;
+  line-height: 1;
+}
+
+.link-externo img {
+  max-width: 28px;
+  display: block;
+  object-fit: contain;
 }

@@ -1,0 +1,63 @@
+@import url("../global/cores.css");
+
+#contato main > div {
+  background-color: var(--azul-4);
+}
+
+#contato main > h1 {
+  padding: 4% 8%;
+  margin-left: 6%;
+  max-width: 100%;
+  max-width: 1200px;
+}
+
+.contato-lista {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  padding: 12%;
+  padding-right: 20%;
+  justify-self: center;
+  justify-content: center;
+  place-content: center;
+  place-self: center;
+  color: white;
+  margin-left: auto;
+}
+
+.contato-lista > * {
+  width: fit-content;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contato-lista a,
+.contato-lista span {
+  display: block;
+  margin-left: 52px;
+}
+
+.map {
+  min-height: 360px;
+  height: 100%;
+  width: 100%;
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#contato .redes {
+  padding-top: 100px;
+  background-color: var(--cinza-1);
+}
+
+#contato .redes h1 {
+  color: var(--azul-4);
+}

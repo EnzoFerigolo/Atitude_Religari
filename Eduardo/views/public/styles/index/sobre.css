@@ -17,13 +17,12 @@
 }
 
 .sobre-txt {
-  height: fit-content;
   padding: 12%;
-  display: flex;
-  place-content: center;
-  align-items: left;
-  flex-direction: column;
+  display: grid;
+  align-self: center;
+  height: fit-content;
   gap: clamp(12px, 2.5vw + 0.5rem, 32px);
+  box-sizing: border-box;
 }
 
 .sobre-txt button {

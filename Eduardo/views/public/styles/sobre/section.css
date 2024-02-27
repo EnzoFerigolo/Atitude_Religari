@@ -1,0 +1,57 @@
+@import url("../global/cores.css");
+
+#sobre > section {
+  background-color: var(--cinza-2);
+  max-height: min-content;
+}
+
+#sobre > section img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sobre .sobre-txt {
+  padding: 15%;
+  place-self: center;
+  height: fit-content;
+}
+
+.meu-trabalho {
+  background-color: var(--azul-4) !important;
+  gap: clamp(40px, 4.5vw + 1rem, 80px);
+  padding-block: 8%;
+  padding-inline: 10%;
+  place-self: center;
+  place-content: center;
+  align-items: center;
+}
+
+.meu-trabalho h1 {
+  width: 100%;
+  grid-column: 1/-1;
+  color: white;
+}
+
+.meu-trabalho ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  grid-template-rows: repeat(3, auto);
+  gap: 28px;
+}
+
+.meu-trabalho li {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.meu-trabalho li::before {
+  display: inline-block;
+  content: "";
+  min-width: 24px;
+  min-height: 24px;
+  background-color: var(--cinza-4);
+}

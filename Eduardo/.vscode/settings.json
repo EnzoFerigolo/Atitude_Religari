@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/6df6abfe-eb87-49ad-9aa8-199450a16abe/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/eduardoreligari",
+  "appService.deploySubpath": "."
+}
